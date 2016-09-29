@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create(email: "bob")
+User.create(email: "taco")
+User.create(email: "coffee")
+User.create(email: "matte")
+
+ShortenedUrl.create(long_url: "google", short_url: "g", :user_id => 1)
+ShortenedUrl.create(long_url: "google", short_url: "g2", :user_id => 2)
+ShortenedUrl.create(long_url: "amazon", short_url: "a", :user_id => 1)
